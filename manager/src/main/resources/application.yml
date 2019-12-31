@@ -1,0 +1,33 @@
+# config application info
+server:
+  servlet:
+    context-path: /manager
+  port: 8080
+
+# config dataSource
+spring:
+  datasource:
+    url:
+      jdbc:mysql://localhost:3306/finance?useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2B8
+    username:
+      root
+    password:
+      123456
+    driver-class-name:
+      com.mysql.cj.jdbc.Driver
+
+# config mybatis
+mybatis:
+  config-location:
+    classpath:mybatis-config.xml
+  mapper-locations:
+    /mapperConfig/**/**.xml
+  type-aliases-package:
+    com.uek.finance.entity
+
+# config mybatis pageHelper
+pagehelper:
+  helper-dialect: mysql
+  reasonable: true
+
+
