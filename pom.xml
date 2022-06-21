@@ -34,7 +34,7 @@
         <swagger.version>2.6.1</swagger.version>
         <springboot.version>2.2.1.RELEASE</springboot.version>
         <lombok.version>1.18.10</lombok.version>
-        <mysql.version>8.0.18</mysql.version>
+        <mysql.version>8.0.28</mysql.version>
     </properties>
 
     <!-- 5.
